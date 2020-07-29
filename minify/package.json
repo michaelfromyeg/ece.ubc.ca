@@ -1,0 +1,9 @@
+{
+    "name": "ece.ubc.ca",
+    "version": "1.0.0",
+    "description": "The mainpage for ECE@UBC.",
+    "main": "minify.js",
+    "repository": "https://github.com/michaelfromyeg/ece.ubc.ca.git",
+    "author": "Michael DeMarco <michaelfromyeg@gmail.com>",
+    "license": "MIT"
+}

@@ -1,0 +1,197 @@
+/* General */
+@import url('//cloud.typography.com/6804272/781004/css/fonts.css');
+
+* {
+  font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+  /*font-family: 'Open Sans', sans-serif;*/
+}
+
+body {
+  background: #fff !important;
+}
+
+/*@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');*/
+
+/* Media Queries */
+
+@media screen and (max-width:979px) {
+  body {
+    padding: 0;
+  }
+  .ece-nav-button a {
+    float: none;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .tile-container {
+    float: none !important;
+    width: 100%;
+    position: relative;
+  }
+  .container {
+    width: 80%;
+  }
+  .full-width .expand, .full-width .expand {
+    margin: 0 !important;
+    padding: 20px !important;
+  }
+  .full-width-container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .content {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+  #ubc7-unit .span12 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .tile-container {
+    display: block !important;
+    margin: 0 auto !important;
+    width: 60% !important;
+    padding: 0 !important;
+  }
+}
+
+/* Suppress hover effect on devices that don't support hover fully */
+@media (hover:none), (hover:on-demand) {
+  .tile-container:no-hover .image {
+    opacity: 0.3;
+  }
+  .tile-container:no-hover .middle {
+    opacity: 1;
+  }
+}
+
+/* Quick links buttons */
+
+.ece-nav-container {
+  margin: auto;
+  width: 80%;
+  vertical-align: middle
+}
+
+.ece-nav-button a {
+  display: block;
+  width: 25%;
+  padding: 1%;
+  text-decoration: none;
+  background-color: #2f5d7c;
+  background-image: linear-gradient(to bottom, #2f5d7c, #264e6a);
+  border-color: rgba(38, 78, 106, .5);
+  font-family: Arial, Sans-Serif;
+  margin: 2%;
+  float: left;
+  text-align: center;
+  color: #fff;
+  text-shadow: none;
+  min-height: 20px;
+}
+
+.tile-container {
+  position: relative;
+  width: 45%;
+  float: left;
+  padding: 2%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 50%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.tile-container:hover .image {
+  opacity: 0.3;
+}
+
+.tile-container:hover .middle {
+  opacity: 1;
+}
+
+.tile-text {
+  background-color: #002145;
+  color: #FFFFFF;
+  font-size: 16px;
+  padding: 16px 32px;
+  text-decoration: none;
+}
+
+/* Removing navbar shadows */
+
+#ubc7-unit-name a, #ubc7-unit-name a {
+  font-weight: normal;
+}
+
+/* Removing navbar shadows */
+
+#ubc7-unit-name a, #ubc7-unit-name a:hover {
+  text-shadow: none;
+}
+
+#ubc7-unit {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+#ubc7-header {
+  border-top: none;
+}
+
+/* Navbar */
+
+/* Normal type (eg., home) -- no submenu */
+ul#menu-top-nav > li.active > a {
+    background-color: #002145 !important;
+    color: white;
+    /*box-shadow: none;*/
+}
+
+/* Special type (eg., Research) -- has submenu */
+
+ul#menu-top-nav > li.active > div.btn-group {
+    background-color: #002145 !important;
+    color: white;
+    /*box-shadow: none;*/
+}
+
+ul#menu-top-nav > li.active > div.btn-group > a.btn {
+    background-color: #002145 !important;
+    color: white;
+    /*box-shadow: none;*/
+}
+
+ul#menu-top-nav > li.active > div.btn-group > button {
+    background-color: #002145 !important;
+    color: white !important;
+    /*box-shadow: none;*/
+}
+
+ul#menu-top-nav > li.active > div.btn-group > button > span {
+    background-color: #002145 !important;
+    background-position: -1178px -227px !important;
+    color: white !important;
+    text-decoration: white !important;
+    /*background-image: url('../img/ubc7-clf-sprite-white-2x.png')!important*/
+    /*box-shadow: none;*/
+}

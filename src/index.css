@@ -1,0 +1,338 @@
+.more-news {
+    text-align: center;
+    border: 1px solid #002145;
+    background-color: white;
+    padding: 0.5em 2em;
+    margin: 0.25em auto;
+    transition: 0.3s ease;
+    height: 2em;
+    width: 125px;
+}
+
+.more-news:hover,
+.more-news:focus {
+    cursor: pointer;
+    background-color: #002145;
+}
+
+.more-news>a {
+    color: #002145;
+    text-decoration: none;
+}
+
+.more-news:hover>a,
+.more-news:focus>a {
+    color: white;
+    cursor: pointer;
+    background-color: none;
+    text-decoration: none;
+}
+
+.homepage-header {
+    /*color: #00B0F0;*/
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+
+/* NB: This is the list (ul) of news items */
+
+.news-item {}
+
+.news-item>li:hover {}
+
+.news-item>li>p>a {
+    text-decoration: none;
+    color: #002145;
+}
+
+.news-item>li>p>a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.news-item>li>div {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.news-item>li>div>img {
+    width: 100% !important;
+    height: auto;
+    transition: 0.5s ease;
+}
+
+.news-item>li:hover>div>img {
+    transform: scale(1.4);
+}
+
+.wp-block-latest-posts__featured-image::after {
+    content: ".";
+    color: #00B0F0;
+    background-color: #00B0F0;
+    display: block;
+    width: 100%;
+}
+
+.numbers-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.numbers-row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.numbers-group {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+    margin: 1em;
+}
+
+.numbers-number {
+    font-size: 3em;
+    color: #00B0F0;
+    font-weight: bold;
+    display: block;
+}
+
+.numbers-description {
+    display: block;
+    color: #00B0F0;
+}
+
+.programs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.programs-row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.program-container {
+    display: flex;
+    margin: 1em;
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.program-container:hover {
+    cursor: pointer;
+}
+
+.program-slant {
+    box-sizing: border-box;
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: 0;
+    left: 0;
+    bottom: 50px;
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-bottom: 30px solid #34B6E4;
+    border-right: 30px solid transparent;
+    overflow: hidden;
+    transition: bottom 0.3s ease-out;
+    bottom: 50px;
+}
+
+.program-text {
+    display: flex;
+    z-index: 1000;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    color: white;
+    background-color: #34B6E4;
+    /* #34B6E4 #002145*/
+    /*background: rgb(44,177,224);
+  background: linear-gradient(90deg, rgba(44,177,224,1) 0%, rgba(102,215,255,1) 100%);*/
+    padding: 1em 0 1em 1em;
+    overflow: hidden;
+    transition: height 0.3s ease-out;
+    height: 50px;
+}
+
+.program-image {
+    z-index: 0;
+}
+
+
+/* Image shadow */
+
+
+/*.program-container::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    background-image: -moz-linear-gradient( 90deg, rgb(12, 35, 68) 0%, rgba(12, 35, 68, 0) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(12, 35, 68) 0%, rgba(12, 35, 68, 0) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(12, 35, 68) 0%, rgba(12, 35, 68, 0) 100%);
+  }*/
+
+.link-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.link-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.link-item {
+    display: flex;
+    flex: 1;
+    border: 1px solid #002145;
+    /*#34B6E4 #0E2C68*/
+    background-color: white;
+    padding: 0.5em 2em;
+    margin: 0.25em;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+    height: 2em;
+}
+
+.link-item:hover,
+.link-item:focus {
+    cursor: pointer;
+    background-color: #002145;
+}
+
+.link-item:hover>.link-link,
+.link-item:focus>.link-link {
+    cursor: pointer;
+    color: white;
+}
+
+.link-link {
+    text-align: center;
+    color: #002145;
+    font-size: 1em;
+    text-decoration: none;
+    opacity: 1;
+}
+
+.link-link:hover,
+.link-link:focus {
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 1;
+}
+
+
+/* Carousel full-width, flush with nav-bar */
+
+.utility.span12 {
+    display: none;
+}
+
+.full-width-container {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.full-width .full-width-container {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.full-width-container div#container {
+    padding-top: 0
+}
+
+.full-width .full-width-container .expand {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0
+}
+
+
+/* Carousel shadow */
+
+.flex-active-slide:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    background-image: -moz-linear-gradient( 90deg, rgb(12, 35, 68) 0%, rgba(12, 35, 68, 0) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(12, 35, 68) 0%, rgba(12, 35, 68, 0) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(12, 35, 68) 0%, rgba(12, 35, 68, 0) 100%);
+}
+
+
+/* Feature video, plus on/off toggle */
+
+.yt {
+    margin-bottom: 0;
+}
+
+.unhide {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+#post-6462 h2.post-title.entry-title a {
+    font-size: 80%
+}
+
+
+/* Tweaking spacing on the frontpage */
+
+@media screen and (max-width: 979px) {
+    body {
+        padding: 0;
+    }
+    .full-width-container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    #frontpage-siderbar {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.span4 .nav {
+    margin-bottom: 0 !important;
+}
+
+.span4 .tab-content br {
+    display: none !important;
+}
+
+
+/* Removing grey sidebar */
+
+.basic-sliding .flex-direction-nav {
+    display: none;
+}
